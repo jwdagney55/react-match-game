@@ -1,0 +1,14 @@
+.Game-Board {
+    background-color: #000000;
+    color: yellow;
+  }
+  
+  .Game-Card {
+    background-color: lightgreen;
+  }
+  
+  table {
+    color: white;
+    border: 3px solid;
+    border-color: orange;
+  }
