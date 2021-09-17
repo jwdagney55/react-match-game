@@ -13,7 +13,7 @@ function GameBoard() {
             <h2>Match Game!</h2>
             <table>
                 <tr>
-                    <Card() />
+                    <Card />
                     <Card />
                 </tr>
                 <tr>
