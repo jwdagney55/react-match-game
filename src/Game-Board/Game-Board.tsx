@@ -13,12 +13,12 @@ function GameBoard() {
             <h2>Match Game!</h2>
             <table>
                 <tr>
-                    <Card />
-                    <Card />
+                    <Card cardNum={"1"} word={"apple"} />
+                    <Card cardNum={"2"} word={"apple"} />
                 </tr>
                 <tr>
-                    <Card />
-                    <Card />
+                    <Card cardNum={"3"} word={"banana"} />
+                    <Card cardNum={"4"} word={"banana"} />
                 </tr>
             </table>
 

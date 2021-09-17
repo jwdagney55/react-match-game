@@ -4,7 +4,7 @@ import ReactCardFlip from 'react-card-flip';
 
 import '../Game-Board/Game-Board.css';
 
-function Card(): JSX.Element {
+function Card(stuff: {cardNum: string; word: string}): JSX.Element {
     const [isFlipped, setIsFlipped] = React.useState(false);
 
     const handleClick = () => {
@@ -13,9 +13,9 @@ function Card(): JSX.Element {
 
     return (
         <ReactCardFlip isFlipped = {isFlipped} flipDirection="vertical">
-            <td onClick={handleClick}>Front</td>
+            <td onClick={handleClick}>{stuff.cardNum}</td>
 
-            <td onClick={handleClick}>Back</td>
+            <td onClick={handleClick}>{stuff.word}</td>
         </ReactCardFlip>
     )
 }
