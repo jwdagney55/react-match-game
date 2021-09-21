@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/jwdagney55/react-match-game/static/css/main.0d9c5f25.chunk.css",
+    "main.js": "/jwdagney55/react-match-game/static/js/main.2f970553.chunk.js",
+    "main.js.map": "/jwdagney55/react-match-game/static/js/main.2f970553.chunk.js.map",
+    "runtime-main.js": "/jwdagney55/react-match-game/static/js/runtime-main.98069d04.js",
+    "runtime-main.js.map": "/jwdagney55/react-match-game/static/js/runtime-main.98069d04.js.map",
+    "static/js/2.d6b32ec3.chunk.js": "/jwdagney55/react-match-game/static/js/2.d6b32ec3.chunk.js",
+    "static/js/2.d6b32ec3.chunk.js.map": "/jwdagney55/react-match-game/static/js/2.d6b32ec3.chunk.js.map",
+    "static/js/3.c0b4709d.chunk.js": "/jwdagney55/react-match-game/static/js/3.c0b4709d.chunk.js",
+    "static/js/3.c0b4709d.chunk.js.map": "/jwdagney55/react-match-game/static/js/3.c0b4709d.chunk.js.map",
+    "index.html": "/jwdagney55/react-match-game/index.html",
+    "static/css/main.0d9c5f25.chunk.css.map": "/jwdagney55/react-match-game/static/css/main.0d9c5f25.chunk.css.map",
+    "static/js/2.d6b32ec3.chunk.js.LICENSE.txt": "/jwdagney55/react-match-game/static/js/2.d6b32ec3.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/jwdagney55/react-match-game/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.98069d04.js",
+    "static/js/2.d6b32ec3.chunk.js",
+    "static/css/main.0d9c5f25.chunk.css",
+    "static/js/main.2f970553.chunk.js"
+  ]
+}
