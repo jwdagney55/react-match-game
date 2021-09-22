@@ -10,7 +10,9 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
     <GameBoard />
+    {/**
     <ScoreCard totalScore={6} />
+    */}
   </React.StrictMode>,
   document.getElementById('root')
 );
