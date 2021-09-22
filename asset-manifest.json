@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-match-game/static/css/main.0d9c5f25.chunk.css",
-    "main.js": "/react-match-game/static/js/main.4567164e.chunk.js",
-    "main.js.map": "/react-match-game/static/js/main.4567164e.chunk.js.map",
+    "main.js": "/react-match-game/static/js/main.94d93d1f.chunk.js",
+    "main.js.map": "/react-match-game/static/js/main.94d93d1f.chunk.js.map",
     "runtime-main.js": "/react-match-game/static/js/runtime-main.3b7a5e99.js",
     "runtime-main.js.map": "/react-match-game/static/js/runtime-main.3b7a5e99.js.map",
     "static/js/2.d6b32ec3.chunk.js": "/react-match-game/static/js/2.d6b32ec3.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.3b7a5e99.js",
     "static/js/2.d6b32ec3.chunk.js",
     "static/css/main.0d9c5f25.chunk.css",
-    "static/js/main.4567164e.chunk.js"
+    "static/js/main.94d93d1f.chunk.js"
   ]
 }
