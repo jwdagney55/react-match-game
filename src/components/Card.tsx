@@ -21,9 +21,6 @@ function Card(stuff: {cardNum: number; word: string}): JSX.Element {
         setIsFlipped(!isFlipped);
     }
 
-    let cardPics: string[] = ["baseball", "basketball", "tennis"];
-    let cardNums: number[] = [1,2,3,4,5,6];
-
     const FindNum = (num:number): JSX.Element => {
         switch(num){
             case (1):
@@ -39,7 +36,7 @@ function Card(stuff: {cardNum: number; word: string}): JSX.Element {
             case (6):
                 return <img src={card6} onClick={handleClick} alt="Card6"/>;
         }
-        return <img src={notFound} onClick={handleClick} alt="image not found"/>;
+        return <img src={notFound} onClick={handleClick} alt="not found"/>;
     }
 
     const FindCard = (sport:string): JSX.Element => {
@@ -55,7 +52,7 @@ function Card(stuff: {cardNum: number; word: string}): JSX.Element {
                 return <img src={basketball} onClick={handleClick} alt="basketball"/>;
         }
         console.log("no card")
-        return <img src={notFound} onClick={handleClick} alt="image not found"/>;
+        return <img src={notFound} onClick={handleClick} alt="not found"/>;
     }
 
     return (
@@ -68,18 +65,6 @@ function Card(stuff: {cardNum: number; word: string}): JSX.Element {
 
 
     )
-
-    {/**
-    return (
-        <table>
-            <tr>
-                <td>cardNumElement</td>
-                <td>cardSportElement</td>
-            </tr>
-        </table>
-        
-    );
-    */}
 }
 
 
