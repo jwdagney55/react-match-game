@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/react-match-game/static/css/main.0d9c5f25.chunk.css",
-    "main.js": "/react-match-game/static/js/main.94d93d1f.chunk.js",
-    "main.js.map": "/react-match-game/static/js/main.94d93d1f.chunk.js.map",
-    "runtime-main.js": "/react-match-game/static/js/runtime-main.3b7a5e99.js",
-    "runtime-main.js.map": "/react-match-game/static/js/runtime-main.3b7a5e99.js.map",
-    "static/js/2.d6b32ec3.chunk.js": "/react-match-game/static/js/2.d6b32ec3.chunk.js",
-    "static/js/2.d6b32ec3.chunk.js.map": "/react-match-game/static/js/2.d6b32ec3.chunk.js.map",
-    "static/js/3.c0b4709d.chunk.js": "/react-match-game/static/js/3.c0b4709d.chunk.js",
-    "static/js/3.c0b4709d.chunk.js.map": "/react-match-game/static/js/3.c0b4709d.chunk.js.map",
+    "main.css": "/react-match-game/static/css/main.3123c06b.chunk.css",
+    "main.js": "/react-match-game/static/js/main.a3f66760.chunk.js",
+    "main.js.map": "/react-match-game/static/js/main.a3f66760.chunk.js.map",
+    "runtime-main.js": "/react-match-game/static/js/runtime-main.d2c8b57f.js",
+    "runtime-main.js.map": "/react-match-game/static/js/runtime-main.d2c8b57f.js.map",
+    "static/js/2.afebdf00.chunk.js": "/react-match-game/static/js/2.afebdf00.chunk.js",
+    "static/js/2.afebdf00.chunk.js.map": "/react-match-game/static/js/2.afebdf00.chunk.js.map",
+    "static/js/3.fa824ebe.chunk.js": "/react-match-game/static/js/3.fa824ebe.chunk.js",
+    "static/js/3.fa824ebe.chunk.js.map": "/react-match-game/static/js/3.fa824ebe.chunk.js.map",
     "index.html": "/react-match-game/index.html",
-    "static/css/main.0d9c5f25.chunk.css.map": "/react-match-game/static/css/main.0d9c5f25.chunk.css.map",
-    "static/js/2.d6b32ec3.chunk.js.LICENSE.txt": "/react-match-game/static/js/2.d6b32ec3.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/react-match-game/static/media/logo.6ce24c58.svg"
+    "static/css/main.3123c06b.chunk.css.map": "/react-match-game/static/css/main.3123c06b.chunk.css.map",
+    "static/js/2.afebdf00.chunk.js.LICENSE.txt": "/react-match-game/static/js/2.afebdf00.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3b7a5e99.js",
-    "static/js/2.d6b32ec3.chunk.js",
-    "static/css/main.0d9c5f25.chunk.css",
-    "static/js/main.94d93d1f.chunk.js"
+    "static/js/runtime-main.d2c8b57f.js",
+    "static/js/2.afebdf00.chunk.js",
+    "static/css/main.3123c06b.chunk.css",
+    "static/js/main.a3f66760.chunk.js"
   ]
 }
