@@ -40,16 +40,9 @@ function Card(stuff: {cardNum: number; word: string}): JSX.Element {
         <ReactCardFlip isFlipped = {isFlipped} flipDirection="vertical" >
             {FindNum(stuff.cardNum)}
 
-            {FindCard("hello")}
+            {FindCard(stuff.word)}
         </ReactCardFlip>
         
-       /*
-       <ReactCardFlip isFlipped = {isFlipped} flipDirection="vertical" >
-           <img className = "Game-Card" src={notFound} onClick={handleClick} alt="not found"/>;
-
-           <img className = "Game-Card" src='/../src/images/tennis.png' onClick={handleClick} alt="not found"/>;
-       </ReactCardFlip>
-       */
     )
 }
 

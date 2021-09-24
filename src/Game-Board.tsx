@@ -8,9 +8,7 @@ function selectOrder(size:number): number[] {
     let ret:number[] = new Array(size);
     for (let index = 0; index < size; index++) {
         ret[index] = -1;
-        console.log("hello1");
     }
-    console.log("hello2");
     for (let picIdx = 0; picIdx < (size/2) - 1; picIdx++) {
         let picPlaced:number = 0;
         while(picPlaced < 2){
@@ -37,9 +35,8 @@ function selectOrder(size:number): number[] {
 function GameBoard() {
     //Set state of card to be not flipped
     //Hard code the cards in for now
-    console.log("in gameboard")
-    let sportCards: string[] = ['baseball', 'basketball', 'tennis'];
-    let picOrder:number[] = selectOrder(6);
+    let sportCards: string[] = ['baseball', 'basketball', 'tennis', 'hockey'];
+    let picOrder:number[] = selectOrder(sportCards.length * 2);
     console.log(picOrder);
 
     return(
@@ -52,11 +49,13 @@ function GameBoard() {
                         <td><Card cardNum={1} word={sportCards[picOrder[0]]} /></td>
                         <td><Card cardNum={2} word={sportCards[picOrder[1]]} /></td>
                         <td><Card cardNum={3} word={sportCards[picOrder[2]]} /></td>
+                        <td><Card cardNum={4} word={sportCards[picOrder[3]]} /></td>
                     </tr>
                     <tr>
-                        <td><Card cardNum={4} word={sportCards[picOrder[3]]} /></td>
                         <td><Card cardNum={5} word={sportCards[picOrder[4]]} /></td>
                         <td><Card cardNum={6} word={sportCards[picOrder[5]]} /></td>
+                        <td><Card cardNum={7} word={sportCards[picOrder[6]]} /></td>
+                        <td><Card cardNum={8} word={sportCards[picOrder[7]]} /></td>
                     </tr>
                 </tbody>                 
             </table>
