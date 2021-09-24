@@ -6,6 +6,11 @@
   
 .Game-Card {
     background-color: lightgreen;
+    width: 6em;
+    height: 6em;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
 }
   
 table {
@@ -17,7 +22,7 @@ table {
 }
 
 td {
-  background-color: white;
+  background-color: lightgreen;
   color: black;
   width: 75px;
   height: 75px;
@@ -26,7 +31,9 @@ td {
 }
 
 .ScoreCard {
-  width:200px;
-  height: 100px;
+  width:150px;
+  height: 50px;
   background-color: lightblue;
+  margin-top: 0;
+  text-align: center;
 }

@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import GameBoard from './Game-Board/Game-Board'
+//import App from './App';
+import GameBoard from './components/Game-Board'
 import ScoreCard from './components/ScoreCard'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
     <GameBoard />
     <ScoreCard totalScore={6} />
   </React.StrictMode>,

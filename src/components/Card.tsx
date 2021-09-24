@@ -11,7 +11,7 @@ import card5 from '../images/Card5.png'
 import card6 from '../images/Card6.png'
 import notFound from '../images/notfound.png'
 
-import '../Game-Board/Game-Board.css';
+import './Game-Board.css';
 
 function Card(stuff: {cardNum: number; word: string}): JSX.Element {
     console.log("In Card");
@@ -24,17 +24,17 @@ function Card(stuff: {cardNum: number; word: string}): JSX.Element {
     const FindNum = (num:number): JSX.Element => {
         switch(num){
             case (1):
-                return <img src={card1} onClick={handleClick} alt="Card1"/>;
+                return <img className = "Game-Card" src={card1} onClick={handleClick} alt="Card1"/>;
             case (2):
-                return <img src={card2} onClick={handleClick} alt="Card2"/>;
+                return <img className = "Game-Card" src={card2} onClick={handleClick} alt="Card2"/>;
             case (3):
-                return <img src={card3} onClick={handleClick} alt="Card3"/>;
+                return <img className = "Game-Card" src={card3} onClick={handleClick} alt="Card3"/>;
             case (4):
-                return <img src={card4} onClick={handleClick} alt="Card4"/>;
+                return <img className = "Game-Card" src={card4} onClick={handleClick} alt="Card4"/>;
             case (5):
-                return <img src={card5} onClick={handleClick} alt="Card5"/>;
+                return <img className = "Game-Card" src={card5} onClick={handleClick} alt="Card5"/>;
             case (6):
-                return <img src={card6} onClick={handleClick} alt="Card6"/>;
+                return <img className = "Game-Card" src={card6} onClick={handleClick} alt="Card6"/>;
         }
         return <img src={notFound} onClick={handleClick} alt="not found"/>;
     }
@@ -43,21 +43,21 @@ function Card(stuff: {cardNum: number; word: string}): JSX.Element {
         switch(sport){
             case ("tennis"):
                 console.log("tennis card")
-                return <img src={tennis} onClick={handleClick} alt="tennis"/>;
+                return <img className = "Game-Card" src={tennis} onClick={handleClick} alt="tennis"/>;
             case ("baseball"):
                 console.log("baseball card")
-                return <img src={baseball} onClick={handleClick} alt="baseball"/>;
+                return <img className = "Game-Card" src={baseball} onClick={handleClick} alt="baseball"/>;
             case ("basketball"):
                 console.log("basketball card")
-                return <img src={basketball} onClick={handleClick} alt="basketball"/>;
+                return <img className = "Game-Card" src={basketball} onClick={handleClick} alt="basketball"/>;
         }
         console.log("no card")
-        return <img src={notFound} onClick={handleClick} alt="not found"/>;
+        return <img className = "Game-Card" src={notFound} onClick={handleClick} alt="not found"/>;
     }
 
     return (
         
-        <ReactCardFlip isFlipped = {isFlipped} flipDirection="vertical">
+        <ReactCardFlip isFlipped = {isFlipped} flipDirection="vertical" >
             {FindNum(stuff.cardNum)}
 
             {FindCard(stuff.word)}
