@@ -21,7 +21,7 @@ function Card(stuff: {cardNum: number; word: string}): JSX.Element {
 
 
     const FindNum = (num:number): JSX.Element => {
-        return <img className="Game-Card" src={process.env.PUBLIC_URL + "/images/card" + num + ".png"} onClick={handleClick} alt={num.toString()} />;
+        return <img className="Game-Card" src={process.env.PUBLIC_URL + "/images/Card" + num + ".png"} onClick={handleClick} alt={num.toString()} />;
     }
 
     const FindCard = (sport:string): JSX.Element => {
