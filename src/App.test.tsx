@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
-import GameBoard from './Game-Board/Game-Board'
+import GameBoard from './Game-Board'
 import Card from './components/Card'
 
 test('renders learn react link', () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Game-Board.css'
+import '../Game-Board.css'
 
 function ScoreCard(score: {totalScore: number}): JSX.Element{
 

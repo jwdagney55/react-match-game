@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 //import App from './App';
-import GameBoard from './components/Game-Board'
+import GameBoard from './Game-Board'
 import ScoreCard from './components/ScoreCard'
 import reportWebVitals from './reportWebVitals';
 

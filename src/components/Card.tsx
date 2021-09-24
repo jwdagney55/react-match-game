@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactCardFlip from 'react-card-flip';
-import baseball from '../images/baseball.png'
-import basketball from '../images/basketball.png'
-import tennis from '../images/Tennis.png'
+//import * as SPORTS from '/images/sports'
+/*
+import baseball from '/images/baseball.png'
+import basketball from '/images/basketball.png'
+import tennis from '/images/tennis.png'
+*/
+
 import card1 from '../images/Card1.png'
 import card2 from '../images/Card2.png'
 import card3 from '../images/Card3.png'
@@ -11,7 +15,8 @@ import card5 from '../images/Card5.png'
 import card6 from '../images/Card6.png'
 import notFound from '../images/notfound.png'
 
-import './Game-Board.css';
+import '../Game-Board.css';
+
 
 function Card(stuff: {cardNum: number; word: string}): JSX.Element {
     console.log("In Card");
@@ -20,6 +25,15 @@ function Card(stuff: {cardNum: number; word: string}): JSX.Element {
     const handleClick = () => {
         setIsFlipped(!isFlipped);
     }
+    /*
+    const indexImgImport = (): void => {
+        for(let x in SPORTS){
+            console.log(typeof(x), "is ", x);
+            console.log(1);
+        }
+
+    }
+    */
 
     const FindNum = (num:number): JSX.Element => {
         switch(num){
@@ -43,13 +57,13 @@ function Card(stuff: {cardNum: number; word: string}): JSX.Element {
         switch(sport){
             case ("tennis"):
                 console.log("tennis card")
-                return <img className = "Game-Card" src={tennis} onClick={handleClick} alt="tennis"/>;
+                return <img className = "Game-Card" src={process.env.PUBLIC_URL + "/images/tennis.png"} onClick={handleClick} alt="tennis"/>;
             case ("baseball"):
                 console.log("baseball card")
-                return <img className = "Game-Card" src={baseball} onClick={handleClick} alt="baseball"/>;
+                return <img className = "Game-Card" src={process.env.PUBLIC_URL + "/images/baseball.png"} onClick={handleClick} alt="baseball"/>;
             case ("basketball"):
                 console.log("basketball card")
-                return <img className = "Game-Card" src={basketball} onClick={handleClick} alt="basketball"/>;
+                return <img className = "Game-Card" src={process.env.PUBLIC_URL + "/images/basketball.png"} onClick={handleClick} alt="basketball"/>;
         }
         console.log("no card")
         return <img className = "Game-Card" src={notFound} onClick={handleClick} alt="not found"/>;
@@ -62,8 +76,14 @@ function Card(stuff: {cardNum: number; word: string}): JSX.Element {
 
             {FindCard(stuff.word)}
         </ReactCardFlip>
+        
+       /*
+       <ReactCardFlip isFlipped = {isFlipped} flipDirection="vertical" >
+           <img className = "Game-Card" src={notFound} onClick={handleClick} alt="not found"/>;
 
-
+           <img className = "Game-Card" src='/../src/images/tennis.png' onClick={handleClick} alt="not found"/>;
+       </ReactCardFlip>
+       */
     )
 }
 
