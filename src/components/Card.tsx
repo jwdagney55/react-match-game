@@ -28,7 +28,7 @@ function Card(stuff: {cardNum: number; word: string}): JSX.Element {
         //Attempting to catch an error if the file does not exist, but don't know how to do that.
         try {
             console.log("trying");
-            return <img className="Game-Card" src={process.env.PUBLIC_URL + "/images/" + sport + ".png"} onClick={handleClick} alt={sport} />;
+            return <img className="Game-Card" src={process.env.PUBLIC_URL + "/images/sports/" + sport + ".png"} onClick={handleClick} alt={sport} />;
         } catch (error) {
             console.log(error, "found error");
             return <img className="Game-Card" src={process.env.PUBLIC_URL + "/images/notfound.png"} onClick={handleClick} alt={sport} />;
