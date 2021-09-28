@@ -43,7 +43,7 @@ function GameBoard() {
     let Cards:GameCard[] = [];
 
     for (let index = 0; index < picOrder.length; index++) {
-        Cards.push(new GameCard(index+1, sportCards[picOrder[index]], false, false))
+        Cards.push(new GameCard(index+1, sportCards[picOrder[index]]))
     }
 
     return(

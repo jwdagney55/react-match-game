@@ -46,12 +46,14 @@ function Card(stuff: {cardNum: number; word: string}): JSX.Element {
     }
 
     return (
-        
-        <ReactCardFlip isFlipped = {isFlipped} flipDirection="vertical" >
+        <td>
+            <ReactCardFlip isFlipped = {isFlipped} flipDirection="vertical" >
             {FindNum(stuff.cardNum)}
 
             {FindCard(stuff.word)}
-        </ReactCardFlip>
+            </ReactCardFlip>
+        </td>
+        
         
     )
 }
