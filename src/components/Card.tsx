@@ -1,15 +1,25 @@
 import React from 'react';
 import ReactCardFlip from 'react-card-flip';
-//import * as SPORTS from '/images/sports'
-/*
-import baseball from '/images/baseball.png'
-import basketball from '/images/basketball.png'
-import tennis from '/images/tennis.png'
-*/
+import { GameCard } from '../classes/GameCard'
 
 
 import '../Game-Board.css';
 
+/*
+function Card(gCard: GameCard): JSX.Element {
+    console.log("in Card");
+
+    const [isFlipped, setIsFlipped] = React.useState(gCard.isFlipped);
+
+    const handleClick = () => {
+        setIsFlipped(!isFlipped);
+        gCard.setIsFlipped(!isFlipped);
+    }
+    return (
+        <p>Hello1</p>
+    )
+}
+*/
 
 function Card(stuff: {cardNum: number; word: string}): JSX.Element {
     console.log("In Card");
