@@ -1,12 +1,24 @@
-class GameCard{
-     isFlipped: boolean;
-     foundMatch: boolean;
-     pic: string;
+export class GameCard{
+    cardNum: number;
+    cardPic: string;
+    isFlipped: boolean;
+    foundMatch: boolean;
 
-    constructor(isFlipped: boolean, foundMatch: boolean, pic: string){
+     
+
+    constructor(cardNum: number, cardPic: string, isFlipped: boolean, foundMatch: boolean){
+        this.cardNum = cardNum;
+        this.cardPic = cardPic;
         this.isFlipped = isFlipped;
         this.foundMatch = foundMatch;
-        this.pic = pic;
+    }
+
+    public getCardNum(): number{
+        return this.cardNum;
+    }
+    
+    public getcardPic(): string{
+        return this.cardPic;
     }
 
     public getIsFlipped(): boolean{
@@ -17,8 +29,12 @@ class GameCard{
         return this.foundMatch;
     }
 
-    public getPic(): string{
-        return this.pic;
+    public setCardNum(num: number){
+        this.cardNum = num;
+    }
+    
+    public setCardPic(picture: string){
+        this.cardPic = picture;
     }
 
     public setIsFlipped(flip: boolean){
@@ -29,9 +45,6 @@ class GameCard{
         this.foundMatch = match;
     }
 
-    public setPic(picture: string){
-        this.pic = picture;
-    }
     
 
 

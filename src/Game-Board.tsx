@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './components/Card';
+import { GameCard } from './classes/GameCard';
 
 import './Game-Board.css';
 
@@ -38,6 +39,12 @@ function GameBoard() {
     let sportCards: string[] = ['baseball', 'basketball', 'tennis', 'hockey'];
     let picOrder:number[] = selectOrder(sportCards.length * 2);
     console.log(picOrder);
+
+    let Cards:GameCard[] = [];
+
+    for (let index = 0; index < picOrder.length; index++) {
+        Cards.push(new GameCard(index+1, sportCards[picOrder[index]], false, false))
+    }
 
     return(
         <div className="Game-Board">
