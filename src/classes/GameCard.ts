@@ -1,17 +1,19 @@
-export class GameCard{
+class GameCard{
     cardNum: number;
     cardPic: string;
-    //isFlipped: boolean;
-    //foundMatch: boolean;
+    isFlipped: boolean;
+    foundMatch: boolean;
 
      
 
     constructor(cardNum: number, cardPic: string){
         this.cardNum = cardNum;
         this.cardPic = cardPic;
-        //this.isFlipped = isFlipped;
-        //this.foundMatch = foundMatch;
+        this.isFlipped = false;
+        this.foundMatch = false;
     }
+
+    /*
 
     public getCardNum(): number{
         return this.cardNum;
@@ -45,9 +47,9 @@ export class GameCard{
         this.foundMatch = match;
     }
 
-    
+    */
 
 
 }
 
-export{}
+export default GameCard;

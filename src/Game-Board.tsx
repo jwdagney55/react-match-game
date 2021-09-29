@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './components/Card';
-import { GameCard } from './classes/GameCard';
+import GameCard from './classes/GameCard';
 
 import './Game-Board.css';
 
@@ -32,6 +32,16 @@ function selectOrder(size:number): number[] {
     return ret;
 }
 
+/*
+function placeCards(cards:GameCard[]): JSX.Element {
+    return (
+        {cards.map((card: GameCard) => {
+            return <td><Card {...card} /></td>
+        })
+    }
+}
+*/
+
 
 function GameBoard() {
     //Set state of card to be not flipped
@@ -40,12 +50,14 @@ function GameBoard() {
     let picOrder:number[] = selectOrder(sportCards.length * 2);
     console.log(picOrder);
 
-    let Cards:GameCard[] = [];
+    let Cards:GameCard[] = []; 
 
     for (let index = 0; index < picOrder.length; index++) {
         Cards.push(new GameCard(index+1, sportCards[picOrder[index]]))
     }
-
+    let firstRow:GameCard[] = Cards.slice(0,sportCards.length);
+    let secondRow:GameCard[] = Cards.slice(-sportCards.length);
+    const testCard:GameCard = new GameCard(1,'baseball');
     return(
         <div className="Game-Board">
             <h2>Match Game!</h2>
@@ -53,16 +65,19 @@ function GameBoard() {
             <table>
                 <tbody>
                     <tr> 
-                        <td><Card cardNum={1} word={sportCards[picOrder[0]]} /></td>
-                        <td><Card cardNum={2} word={sportCards[picOrder[1]]} /></td>
-                        <td><Card cardNum={3} word={sportCards[picOrder[2]]} /></td>
-                        <td><Card cardNum={4} word={sportCards[picOrder[3]]} /></td>
+                        {firstRow.map(card => {
+                            return (
+                                <td><Card {...card}/></td>
+                            )
+                        })
+                    }
                     </tr>
                     <tr>
-                        <td><Card cardNum={5} word={sportCards[picOrder[4]]} /></td>
-                        <td><Card cardNum={6} word={sportCards[picOrder[5]]} /></td>
-                        <td><Card cardNum={7} word={sportCards[picOrder[6]]} /></td>
-                        <td><Card cardNum={8} word={sportCards[picOrder[7]]} /></td>
+                        {secondRow.map(card => {
+                            return (
+                                <td><Card {...card}/></td>
+                            )
+                        })}
                     </tr>
                 </tbody>                 
             </table>
