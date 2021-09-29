@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from './components/Card';
-import GameCard from './classes/GameCard';
+import { Card } from './components/Card';
+import { GameCard } from './classes/GameCard';
 
 import './Game-Board.css';
 
@@ -57,7 +57,6 @@ function GameBoard() {
     }
     let firstRow:GameCard[] = Cards.slice(0,sportCards.length);
     let secondRow:GameCard[] = Cards.slice(-sportCards.length);
-    const testCard:GameCard = new GameCard(1,'baseball');
     return(
         <div className="Game-Board">
             <h2>Match Game!</h2>
@@ -66,6 +65,7 @@ function GameBoard() {
                 <tbody>
                     <tr> 
                         {firstRow.map(card => {
+                            //card.setCardPic("baseball");
                             return (
                                 <td><Card {...card}/></td>
                             )

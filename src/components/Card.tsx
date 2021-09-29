@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactCardFlip from 'react-card-flip';
-import GameCard from '../classes/GameCard'
+import { GameCard } from '../classes/GameCard'
 
 
 import '../Game-Board.css';
 
 
-function Card(gCard: GameCard): JSX.Element {
+export function Card(gCard: GameCard): JSX.Element {
     console.log("in Card");
 
-    const [isFlipped, setIsFlipped] = React.useState(gCard.isFlipped);
+    const [isFlipped, setIsFlipped] = React.useState<boolean>(gCard.isFlipped);
 
     const handleClick = () => {
         setIsFlipped(!isFlipped);
@@ -84,4 +84,4 @@ function Card(stuff: {cardNum: number; word: string}): JSX.Element {
 }
 */
 
-export default Card;
+//export function Card;
