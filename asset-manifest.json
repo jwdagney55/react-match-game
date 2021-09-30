@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/react-match-game/static/css/main.3123c06b.chunk.css",
-    "main.js": "/react-match-game/static/js/main.a3f467ac.chunk.js",
-    "main.js.map": "/react-match-game/static/js/main.a3f467ac.chunk.js.map",
-    "runtime-main.js": "/react-match-game/static/js/runtime-main.d2c8b57f.js",
-    "runtime-main.js.map": "/react-match-game/static/js/runtime-main.d2c8b57f.js.map",
-    "static/js/2.afebdf00.chunk.js": "/react-match-game/static/js/2.afebdf00.chunk.js",
-    "static/js/2.afebdf00.chunk.js.map": "/react-match-game/static/js/2.afebdf00.chunk.js.map",
-    "static/js/3.fa824ebe.chunk.js": "/react-match-game/static/js/3.fa824ebe.chunk.js",
-    "static/js/3.fa824ebe.chunk.js.map": "/react-match-game/static/js/3.fa824ebe.chunk.js.map",
+    "main.js": "/react-match-game/static/js/main.eee8aeac.chunk.js",
+    "main.js.map": "/react-match-game/static/js/main.eee8aeac.chunk.js.map",
+    "runtime-main.js": "/react-match-game/static/js/runtime-main.3ed833e8.js",
+    "runtime-main.js.map": "/react-match-game/static/js/runtime-main.3ed833e8.js.map",
+    "static/js/2.bb334aa6.chunk.js": "/react-match-game/static/js/2.bb334aa6.chunk.js",
+    "static/js/2.bb334aa6.chunk.js.map": "/react-match-game/static/js/2.bb334aa6.chunk.js.map",
+    "static/js/3.0b7c4f76.chunk.js": "/react-match-game/static/js/3.0b7c4f76.chunk.js",
+    "static/js/3.0b7c4f76.chunk.js.map": "/react-match-game/static/js/3.0b7c4f76.chunk.js.map",
     "index.html": "/react-match-game/index.html",
     "static/css/main.3123c06b.chunk.css.map": "/react-match-game/static/css/main.3123c06b.chunk.css.map",
-    "static/js/2.afebdf00.chunk.js.LICENSE.txt": "/react-match-game/static/js/2.afebdf00.chunk.js.LICENSE.txt"
+    "static/js/2.bb334aa6.chunk.js.LICENSE.txt": "/react-match-game/static/js/2.bb334aa6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d2c8b57f.js",
-    "static/js/2.afebdf00.chunk.js",
+    "static/js/runtime-main.3ed833e8.js",
+    "static/js/2.bb334aa6.chunk.js",
     "static/css/main.3123c06b.chunk.css",
-    "static/js/main.a3f467ac.chunk.js"
+    "static/js/main.eee8aeac.chunk.js"
   ]
 }
