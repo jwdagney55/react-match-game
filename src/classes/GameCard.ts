@@ -7,7 +7,7 @@ export class GameCard{
     constructor(cardNum: number, cardPic: string){
         this.cardNum = cardNum;
         this.cardPic = cardPic;
-        this.isFlipped = true;
+        this.isFlipped = false;
         this.foundMatch = false;
     }
 

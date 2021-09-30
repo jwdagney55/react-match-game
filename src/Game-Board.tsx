@@ -57,7 +57,13 @@ function GameBoard() {
         }
     }
 
-    
+    //print out the state of the cards
+    for(let i = 0; i < 8; i++){
+        console.log("Card", myCards[i].cardNum, ": ");
+        console.log("Flip State: ", myCards[i].isFlipped, '\tFound Match: ', myCards[i].foundMatch); 
+    }
+
+
     let firstRow:GameCard[] = myCards.slice(0,sportCards.length);
     let secondRow:GameCard[] = myCards.slice(-sportCards.length);
     return(
@@ -74,26 +80,13 @@ function GameBoard() {
                         })
                     }
                     </tr>
-                    {/*
                     <tr>
                         {secondRow.map(card => {
                             return (
-                                <td><Card cardNum={card.cardNum}
-                                cardPic={card.cardPic}
-                                isFlipped={card.isFlipped}
-                                foundMatch={card.foundMatch}
-                                getCardNum={card.getCardNum}
-                                getcardPic={card.getcardPic}
-                                getIsFlipped={card.getIsFlipped}
-                                getfoundMatch={card.getfoundMatch}
-                                setCardNum={card.setCardNum}
-                                setCardPic={card.setCardPic}
-                                setIsFlipped={card.setIsFlipped}
-                                setfoundMatch={card.setfoundMatch}/></td>
+                                <td onClick={handleClick}><Card cardNum = {card.cardNum} cards = {myCards} setMyCards = {setMyCards}/></td>
                             )
                         })}
                     </tr>
-                    */}
                 </tbody>                 
             </table>
         </div>
