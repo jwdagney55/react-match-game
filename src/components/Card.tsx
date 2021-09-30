@@ -6,14 +6,15 @@ import { GameCard } from '../classes/GameCard'
 import '../Game-Board.css';
 
 
-export function Card(gCard: GameCard): JSX.Element {
+export function Card({cardNum, cards, setMyCards} : {cardNum: number, cards: GameCard[], setMyCards:(cards:GameCard[]) => void}): JSX.Element {
     console.log("in Card");
 
-    const [isFlipped, setIsFlipped] = React.useState<boolean>(gCard.isFlipped);
-
     const handleClick = () => {
-        setIsFlipped(!isFlipped);
-        //gCard.setIsFlipped(!isFlipped);
+        console.log(cards.map(c => c.cardPic));
+        let newCards: GameCard[] = [...cards];
+        newCards[cardNum-1] = {...newCards[cardNum-1], isFlipped: !newCards[cardNum-1].isFlipped}
+        console.log(newCards.map(c => c.cardPic));
+        setMyCards(newCards)
     }
 
     const FindNum = (num:number): JSX.Element => {
@@ -33,10 +34,10 @@ export function Card(gCard: GameCard): JSX.Element {
     return (
 
         <td>
-            <ReactCardFlip isFlipped = {isFlipped} flipDirection="vertical" >
-                {FindNum(gCard.cardNum)}
+            <ReactCardFlip isFlipped = {!cards[cardNum-1].isFlipped} flipDirection="vertical"  >
+                {FindNum(cards[cardNum-1].cardNum)}
 
-                {FindCard(gCard.cardPic)}
+                {FindCard(cards[cardNum-1].cardPic)}
 
             </ReactCardFlip>
         </td>

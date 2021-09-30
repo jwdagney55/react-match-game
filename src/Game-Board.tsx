@@ -32,31 +32,34 @@ function selectOrder(size:number): number[] {
     return ret;
 }
 
-/*
-function placeCards(cards:GameCard[]): JSX.Element {
-    return (
-        {cards.map((card: GameCard) => {
-            return <td><Card {...card} /></td>
-        })
-    }
-}
-*/
-
-
 function GameBoard() {
     //Set state of card to be not flipped
     //Hard code the cards in for now
     let sportCards: string[] = ['baseball', 'basketball', 'tennis', 'hockey'];
     let picOrder:number[] = selectOrder(sportCards.length * 2);
-    console.log(picOrder);
-
-    let Cards:GameCard[] = []; 
+    console.log("Picture Order: ", picOrder);
+    let cardsData:GameCard[] = []; 
 
     for (let index = 0; index < picOrder.length; index++) {
-        Cards.push(new GameCard(index+1, sportCards[picOrder[index]]))
+        cardsData.push(new GameCard(index+1, sportCards[picOrder[index]]))
     }
-    let firstRow:GameCard[] = Cards.slice(0,sportCards.length);
-    let secondRow:GameCard[] = Cards.slice(-sportCards.length);
+    let [myCards, setMyCards] = React.useState<GameCard[]>(cardsData)
+    console.log(myCards.map(c => c.cardPic));
+
+    const handleClick = () => {
+        for (let i = 0; i < picOrder.length; i++) {
+            //Check the number of flipped cards
+            console.log("Hellow World")
+            for(let j = i+1; j < picOrder.length; j++){
+
+            const element = picOrder[i];
+            }  
+        }
+    }
+
+    
+    let firstRow:GameCard[] = myCards.slice(0,sportCards.length);
+    let secondRow:GameCard[] = myCards.slice(-sportCards.length);
     return(
         <div className="Game-Board">
             <h2>Match Game!</h2>
@@ -65,20 +68,32 @@ function GameBoard() {
                 <tbody>
                     <tr> 
                         {firstRow.map(card => {
-                            //card.setCardPic("baseball");
                             return (
-                                <td><Card {...card}/></td>
+                                <td onClick={handleClick}><Card cardNum = {card.cardNum} cards = {myCards} setMyCards = {setMyCards}/></td>
                             )
                         })
                     }
                     </tr>
+                    {/*
                     <tr>
                         {secondRow.map(card => {
                             return (
-                                <td><Card {...card}/></td>
+                                <td><Card cardNum={card.cardNum}
+                                cardPic={card.cardPic}
+                                isFlipped={card.isFlipped}
+                                foundMatch={card.foundMatch}
+                                getCardNum={card.getCardNum}
+                                getcardPic={card.getcardPic}
+                                getIsFlipped={card.getIsFlipped}
+                                getfoundMatch={card.getfoundMatch}
+                                setCardNum={card.setCardNum}
+                                setCardPic={card.setCardPic}
+                                setIsFlipped={card.setIsFlipped}
+                                setfoundMatch={card.setfoundMatch}/></td>
                             )
                         })}
                     </tr>
+                    */}
                 </tbody>                 
             </table>
         </div>
