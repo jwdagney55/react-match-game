@@ -11,8 +11,10 @@
     "@types/node": "^12.20.25",
     "@types/react": "^17.0.21",
     "@types/react-dom": "^17.0.9",
+    "bootstrap": "^5.1.1",
     "gh-pages": "^3.2.3",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0-rc.0",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "typescript": "^4.4.3",
@@ -20,13 +22,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build", 
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "outputCapture": "std",
-    "console": "integratedTerminal" 
+    "console": "integratedTerminal"
   },
   "eslintConfig": {
     "extends": [

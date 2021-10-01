@@ -2,6 +2,7 @@ import React from 'react';
 import { Card } from './components/Card';
 import { GameCard } from './classes/GameCard';
 import ScoreCard from './components/ScoreCard'
+import { Form } from 'react-bootstrap';
 
 import './Game-Board.css';
 
@@ -53,13 +54,19 @@ function GameBoard() {
         //console.log("Flip State: ", myCards[i].isFlipped, '\tFound Match: ', myCards[i].foundMatch); 
     //}
 
-
     let firstRow:GameCard[] = myCards.slice(0,sportCards.length);
     let secondRow:GameCard[] = myCards.slice(-sportCards.length);
     return(
         <div className="Game-Board">
             <h2>Match Game!</h2>
-            
+
+            <Form.Group className="mb-3" controlId="formBasicCheckbox" >
+                <Form.Check type="checkbox" label="Baseball"/>
+                <Form.Check type="checkbox" label="Basketball"/>
+                <Form.Check type="checkbox" label="Hockey"/>
+                <Form.Check type="checkbox" label="Tennis"/>
+            </Form.Group>
+
             <table>
                 <tbody>
                     <tr> 
