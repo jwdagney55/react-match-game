@@ -1,3 +1,6 @@
+My React Game! Test your memory with this basic TypeScript Match Game. The Check Boxes are not yet functional, but do come from bootstrap.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
