@@ -1,11 +1,11 @@
 import React from 'react';
 import '../Game-Board.css'
 
-function ScoreCard(score: {totalScore: number}): JSX.Element{
+function ScoreCard(scores: {playerScore: number, totalScore: number}): JSX.Element{
 
     return (
         <div>
-            <p className="ScoreCard">Score 0/{score.totalScore}</p>
+            <p className="ScoreCard">Score {scores.playerScore}/{scores.totalScore}</p>
         </div>
     )
 }
